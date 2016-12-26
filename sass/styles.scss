@@ -1,5 +1,36 @@
-$dark-color : #333333;
+$dark-color : salmon;
 
 body {
   background: $dark-color;
+}
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+#city{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+}
+
+
+.content{
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+border: 2px solid green;
+
+
+  .weatherContainer{
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    margin: 20px;
+    flex: 0 0 15%;
+    border: 2px solid blue;
+
+
+    .date{
+    }
+  }
 }

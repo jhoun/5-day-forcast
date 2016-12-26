@@ -1,2 +1,21 @@
 body {
-  background: #333333; }
+  background: salmon; }
+
+h1 {
+  font-family: 'Roboto', sans-serif; }
+
+#city {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px; }
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border: 2px solid green; }
+  .content .weatherContainer {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    margin: 20px;
+    flex: 0 0 15%;
+    border: 2px solid blue; }
