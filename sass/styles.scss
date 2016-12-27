@@ -1,36 +1,66 @@
-$dark-color : salmon;
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background: $dark-color;
+  background: #3ee6b6;
+}
+
+#inputcontainer{
+  width: 10%;
+  display: block;
+  margin: 0 auto;
 }
 
 
 h1 {
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
-#city{
+.city{
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #e63e6e;
 }
 
 
 .content{
 display: flex;
 flex-flow: row wrap;
-justify-content: center;
-border: 2px solid green;
-
 
   .weatherContainer{
     font-family: 'Lato', sans-serif;
     background-color: white;
-    margin: 20px;
-    flex: 0 0 15%;
-    border: 2px solid blue;
+    margin: 0 12px 0 12px;
+    flex: 1 0 3%;
+    border-radius: 2%;
+
 
 
     .date{
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      font-size: 18px;
+      margin: 20px;
+
+    }
+
+    img {
+      height: 70%;
+      width: 100%;
+      border-radius: 5%
+    }
+
+    .max{
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      margin-top: 10px;
     }
   }
 }

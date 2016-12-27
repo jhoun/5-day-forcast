@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>5-Day Forcast</title>
+  <title>5 Day Forcast</title>
   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>5-Day Forcast</h1>
-
-  <input type="text" id="textfield">
-  <br>
-  <button onclick="getWeather()">Search</button>
+  <h1>5 Day Forcast</h1>
+  <div id="inputcontainer">
+    <input type="text" id="textfield" value="Enter city">
+    <br>
+    <button onclick="getWeather()">Search</button>
+  </div>
   <div id="results"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
   <script src="js/client.js"></script>
