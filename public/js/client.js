@@ -4,7 +4,6 @@ function getWeather(){
 var textField = document.getElementById('textfield');
 var newCity = textField.value;
 
-
   //Request Data from Weather
 
   var oReq = new XMLHttpRequest();
@@ -73,11 +72,16 @@ var newCity = textField.value;
       weatherContainer.appendChild(createMax);
 
     }
+
     var nodeCount = document.getElementsByClassName('node');
 
     for (var i = 0; i < nodeCount.length; i++){
-    console.log(results.insertBefore(nodeCount[i], nodeCount[0]));
-  }
+      console.log(i, nodeCount.length);
+      console.log(i === nodeCount.length - 1);
+      if (i === nodeCount.length - 1){
+        results.insertBefore(nodeCount[i], nodeCount[0]);
+      }
+    }
     // console.log(nodeCount);
     // console.log(nodeCount[0]);
     // console.log(nodeCount[1]);
